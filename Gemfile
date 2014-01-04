@@ -32,16 +32,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :deployment do
-  gem 'sqllite3'
-  gem 'rspec-rails' '2.6.1', :require => 'respec-rails'
+group :development do
+  gem 'sqlite3'
+  gem 'rspec-rails', '2.14.1', :require => 'rspec-rails'
   gem 'faker', '0.3.1'
 end 
 
 group :test do
-  gem 'sqllite3' 
-  gem 'respec-rails', '2.6.1', :require => 'respec-rails'
-  
+  gem 'sqlite3' 
+  gem 'rspec-rails', '2.14.1', :require => 'rspec-rails'
   gem 'webrat', '0.7.1'
   gem 'factory_girl_rails', '1.0'
   
